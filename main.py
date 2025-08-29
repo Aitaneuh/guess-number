@@ -7,7 +7,7 @@ def main():
     AVERAGE_SIMULATION = 1000
 
     STARTING_RANGE = 1
-    RANGE_INQREMENT = 1000
+    RANGE_INCREMENT = 1000
     
     simulations_list = []
     guesses_list = []
@@ -32,7 +32,7 @@ def main():
             print(f"[{i+1}/{TOTAL_SIMULATION}]  |  [{j+1}/{AVERAGE_SIMULATION}]")
         simulations_list.append(STARTING_RANGE)
         guesses_list.append(average_guesses)
-        STARTING_RANGE += RANGE_INQREMENT
+        STARTING_RANGE += RANGE_INCREMENT
 
     
     generate_graphs(simulations_list, guesses_list)
